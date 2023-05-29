@@ -3047,3 +3047,6 @@ h1,h5{
 .clickable-trigger{
   cursor: pointer;
 }
+.welcome_text p {
+  max-width: 675px;
+} 
