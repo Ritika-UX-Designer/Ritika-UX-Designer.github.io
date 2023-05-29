@@ -3044,3 +3044,6 @@ h1,h5{
 .home_banner_area{
   background-image: -webkit-linear-gradient(180deg, #766dff 0%, #88f3ff 100%);
 }
+.clickable-trigger{
+  cursor: pointer;
+}

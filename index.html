@@ -62,7 +62,7 @@
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
 								<!-- <li class="nav-item"><a class="nav-link" href="#projects">My Experience</a></li>  -->
-								<li class="nav-item"><a class="nav-link" href="assets/ritika_resume.pdf" target="_blank">Resume</a></li> 
+								<li class="nav-item"><a class="nav-link" href="assets/Ritika-UI-UX-Designer.pdf" target="_blank">Resume</a></li> 
 								<li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
 							</ul>
 						</div> 
@@ -402,7 +402,7 @@
 					<div class="col-lg-12 col-md-12 col-sm-12 resent">
         				<div class="h_gallery_item">
 							<div class="row">
-								<div class="g_img_item col-sm-6">
+								<div class="g_img_item col-sm-6 clickable-trigger">
 									<img class="img-fluid" src="img/gallery/booking-p.png" alt="Hostel , Pg’s booking app - homversity">
 									<a class="light" href="img/gallery/booking-d.png"><img src="img/gallery/icon.png" alt="Hostel , Pg’s booking app - homversity"></a>
 								</div>
@@ -421,7 +421,7 @@
         				<div class="h_gallery_item">
 							<div class="row">
 
-								<div class="g_img_item col-sm-6">
+								<div class="g_img_item col-sm-6 clickable-trigger">
 									<img class="img-fluid" src="img/gallery/lord-p.png" alt="Homversity Lord (Operators)">
 									<a class="light" href="img/gallery/lord-d.png"><img src="img/gallery/icon.png" alt="Homversity Lord (Operators)"></a>
 								</div>
@@ -439,7 +439,7 @@
 					<div class="col-lg-12 col-md-12 col-sm-12 resent">
         				<div class="h_gallery_item">
 							<div class="row">
-								<div class="g_img_item col-sm-6">
+								<div class="g_img_item col-sm-6 clickable-trigger">
 									<img class="img-fluid" src="img/gallery/bud-p.png" alt="Homversity Bud (Tenant)">
 									<a class="light" href="img/gallery/bud-d.png"><img src="img/gallery/icon.png" alt="Homversity Bud (Tenant)"></a>
 								</div>
@@ -458,7 +458,7 @@
 					<div class="col-lg-12 col-md-12 col-sm-12 resent">
         				<div class="h_gallery_item">
 							<div class="row">
-								<div class="g_img_item col-sm-6">
+								<div class="g_img_item col-sm-6 clickable-trigger">
 									<img class="img-fluid" src="img/gallery/mockups.png" alt="Hostel , Pg’s booking website">
 									<a class="light" href="img/gallery/mockups.png"><img src="img/gallery/icon.png" alt="stel , Pg’s booking website"></a>
 								</div>
@@ -481,7 +481,7 @@
         			<div class="col-lg-12 col-md-12 col-sm-12 others">
         				<div class="h_gallery_item">
 							<div class="row">
-								<div class="g_img_item col-sm-6">
+								<div class="g_img_item col-sm-6 clickable-trigger">
 									<img class="img-fluid" src="img/gallery/hike-1.webp" alt="Hike 1">
 									<a class="light" href="img/gallery/hike-1.webp"><img src="img/gallery/icon.png" alt="Hike 1"></a>
 								</div>
@@ -500,7 +500,7 @@
         				<div class="h_gallery_item">
 							<div class="row">
 
-								<div class="g_img_item col-sm-6">
+								<div class="g_img_item col-sm-6 clickable-trigger">
 									<img class="img-fluid" src="img/gallery/savr-1.webp" alt="Savr 1">
 									<a class="light" href="img/gallery/savr-2.webp"><img src="img/gallery/icon.png" alt="Savr 2"></a>
 								</div>
@@ -520,7 +520,7 @@
 					<div class="col-lg-12 col-md-12 col-sm-12 others">
         				<div class="h_gallery_item">
 							<div class="row">
-								<div class="g_img_item col-sm-6">
+								<div class="g_img_item col-sm-6 clickable-trigger">
 									<img class="img-fluid" src="img/gallery/needy-buddy-1.webp" alt="Needy Buddy 1">
 									<a class="light" href="img/gallery/needy-buddy-2.webp"><img src="img/gallery/icon.png" alt="Needy Buddy 2"></a>
 								</div>
@@ -540,7 +540,7 @@
 					<div class="col-lg-12 col-md-12 col-sm-12 others">
         				<div class="h_gallery_item">
         					<div class="row">
-								<div class="g_img_item col-sm-6">
+								<div class="g_img_item col-sm-6 clickable-trigger">
 									<img class="img-fluid" src="img/gallery/e_pay.webp" alt="E Pay">
 									<a class="light" href="img/gallery/e_pay.webp"><img src="img/gallery/icon.png" alt="E Pay"></a>
 								</div>
@@ -721,6 +721,15 @@
 				setTimeout(function(){
 					$('[data-filter=".resent"]').click();
 				});
+		
+				$('.clickable-trigger').click(function(){
+					$(this).children('a').click();
+				});
+				$('.light').click(function(event){
+					event.preventDefault();
+					event.stopPropagation();
+				})
+
 			});
 		</script>
     </body>
